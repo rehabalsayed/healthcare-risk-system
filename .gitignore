@@ -1,6 +1,24 @@
+# MLflow / experiments (NOT needed in production repo)
+experiments/
+mlruns/
+
+# training data (optional for portfolio)
+training/
+
+# notebooks (optional)
+notebooks/
+
+# system files
 __pycache__/
 *.pyc
-*.pyo
+
+# databases
+*.db
+mlflow.db
+
+# logs
+*.log
+
 
 .vscode
 .env
