@@ -11,6 +11,6 @@ WORKDIR /app
 
 EXPOSE 8000
 
-CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "$PORT"]
+CMD ["uvicorn", "src.app:app", "--host", "0.0.0.0", "--port", "8000"]
 
 RUN ls -R /app
