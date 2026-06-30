@@ -1,6 +1,6 @@
 from fastapi import FastAPI , Depends
 
-from src.prediction_service import predict_diabetes
+from prediction_service import predict_diabetes
 
 from sqlalchemy.orm import Session
 
@@ -15,7 +15,7 @@ from database.crud import (
     get_prediction_by_id
 )
 
-from src.schemas import (
+from schemas import (
     DiabetesRequest,
     DiabetesResponse,
     PredictionRecord
