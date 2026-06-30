@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+
+  postgres:
+
+    image: postgres:16
+
+    container_name: healthcare_postgres
+
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123456 
+      POSTGRES_DB: healthcare_db
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+
+  api:
+
+    build: .
+
+    container_name: healthcare_api
+
+    depends_on:
+      - postgres
+
+    ports:
+      - "8000:8000"
+
+    environment:
+      DATABASE_URL: postgresql://postgres:123456@postgres:5432/healthcare_db
+
+
+volumes:
+
+  postgres_data:

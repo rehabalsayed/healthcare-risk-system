@@ -1,0 +1,53 @@
+# ===== Core ML =====
+numpy
+pandas
+scikit-learn
+scipy
+xgboost
+catboost==1.2.7
+joblib
+cloudpickle
+matplotlib
+seaborn
+shap
+skops
+slicer
+numba
+
+# ===== API =====
+fastapi
+uvicorn
+starlette
+requests
+httpx
+
+# ===== DB =====
+SQLAlchemy
+psycopg2-binary
+alembic
+greenlet
+
+# ===== ML tracking =====
+mlflow
+
+# ===== Utils =====
+python-dotenv
+PyYAML
+tqdm
+pydantic
+typing_extensions
+packaging
+python-dateutil
+pytz
+tzdata
+
+# ===== Security =====
+cryptography
+certifi
+urllib3
+charset-normalizer
+idna
+
+# ===== MLflow =====
+mlflow
+mlflow-skinny
