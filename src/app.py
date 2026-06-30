@@ -1,11 +1,11 @@
 from fastapi import FastAPI , Depends
 
-from prediction_service import predict_diabetes
+from src.prediction_service import predict_diabetes
 
 from sqlalchemy.orm import Session
 
 from database.database import get_db
-from database.crud import save_prediction
+
 
 from typing import List
 
